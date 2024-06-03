@@ -12,6 +12,7 @@
 .fa-solid {
     color: var(--main-color);
 }
+
 .Info{
     display: flex;
     position: relative;
@@ -471,9 +472,8 @@ a {
 /****** Media queries ***********/
 
 @media screen 
-  and (min-device-width: 1025px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
+  and (min-width: 1025px) 
+  and (max-width: 1600px)  { 
     .Info{
         display: flex;
         position: relative;
@@ -491,10 +491,9 @@ a {
 }
 /* Portrait */
 @media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 1) {
+  and (min-width: 768px) 
+  and (max-width: 1280px) 
+  and (orientation: portrait)  {
     .main-container {
         width: 100%;
         max-width: 1440px;
@@ -508,8 +507,8 @@ a {
         width: 30em;
         z-index: 1;
         height: 100%;
-        min-width: 59em;
-        max-width: 59em;
+        min-width: 94vw;
+        max-width: 94vw;
         margin: 0 auto;
     }
     .Filterbar {
@@ -535,11 +534,11 @@ a {
         grid-template-columns: 1fr;
     }
     .hebergements, .populaires {
-        width: 58.5em;
+        width: 93vw;
     }
     .hebergements-cards .card{
-        width: 16em;
-        height: 13em;
+        height: 207px;
+        width: 25.5vw;
     }
     .populaires-cards{
         display: grid;
@@ -553,23 +552,22 @@ a {
         padding-right: 2vh;
     }
     .cardactivite img{
-        height: 12.75em;
-        width: 12.75em;
+        width: 20vw;
+        height: 20vw;
     }
     .footerdiv {
         display: flex;
         flex-direction: column;
-        min-width: 57em;
+        min-width: 90vw;
     }
 
 }
 
 /* Landscape */
 @media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 1) {
+  and (min-width: 768px) 
+  and (max-width: 1280px) 
+  and (orientation: landscape)  {
     .main-container {
         width: 100%;
         max-width: 1440px;
@@ -583,8 +581,8 @@ a {
         width: 100%;
         z-index: 1;
         height: 100%;
-        min-width: 122vw;
-        max-width: 1500px;
+        min-width: 94vw;
+        max-width: 94vw;
         margin: 0 auto;
     }
     .Filterbar {
@@ -610,11 +608,11 @@ a {
         grid-template-columns: 1fr;
     }
     .hebergements, .populaires {
-        width: 119vw;
+        width: 93vw;
     }
     .hebergements-cards .card{
-        width: 34vw;
-        height: 13em;
+        height: 207px;
+        width: 25.5vw;
     }
     .populaires-cards{
         display: grid;
@@ -628,20 +626,19 @@ a {
         padding-right: 2vh;
     }
     .cardactivite img{
-        height: 26.5vw;
-        width: 26.5vw;
+        height: 20vw;
+        width: 20vw;
     }
     .footerdiv {
         display: flex;
         flex-direction: column;
-        min-width: 120vw;
+        min-width: 90vw;
     }
 }
 /* Portrait and Landscape */
 @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 767px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
+  and (min-width: 320px) 
+  and (max-width: 767px)  {
     .Info {
         display: grid;
         grid-template-columns: auto;
@@ -895,12 +892,12 @@ a {
         padding-left: 25px;
     }
     .cardactivite{
-        width: 91vw;
+        width: 87vw;
         height: 190px;
     }
-    .cardactivite img {
-        width: 91.5vw;
-        height: 141px;
+    .cardactivite img{
+        height: 124px;
+        width: 89vw;
     }
     .sectionactivités {
         margin-left: 4.5vw;
