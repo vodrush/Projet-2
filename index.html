@@ -17,37 +17,31 @@
 <body>
     <div class="main-container">
         <header>
-
-
-            <!--Activités-->
-
-
-            <section class="Info">
+            <div class="Info">
                 <div class="logo">
                     <img src="./images/logo/Booki.png" alt="Logo Booki">
                 </div>
                 <div class="boutondivhebergement">
-                    <button class="ButtonHebergement">Hébergements</button>
-
-                    <div class="boutondivactivites">
-                        <button class="Buttonactivite">Activités</button>
-                    </div>
+                    <a href="#hebergementpage" class="ButtonHebergement">Hébergements</a>
+                <div class="boutondivactivites">
+                    <a href="#activitepage" class="Buttonactivite">Activités</a>
                 </div>
-            </section>
+            </div>
+            </div>
         </header>
 
 
         <!--Barre de recherche-->
 
 
-        <section class="Titre-Recherche">
+        <div class="Titre-Recherche">
             <div class="Trouvez">
                 <h2 class="section-title">Trouvez votre hébergement pour des vacances de rêve</h2>
                 <p>En plein centre-ville ou en pleine nature</p>
             </div>
-        </section>
+        </div>
 
-        <section class="Recherche">
+        <div class="Recherche">
             <div class="Barre-de-recherche">
                 <button class="Bouton-Localisation"><img src="./images/Icons/PointLocalisation.png"
                         alt="Icône Localisation" style="width: 14px"></button>
@@ -56,13 +50,13 @@
                 <button class="Bouton-Recherche">Rechercher</button>
 
             </div>
-        </section>
+        </div>
 
 
         <!--Filtres-->
 
 
-        <section class="Filterbar">
+        <div class="Filterbar">
             <div class="FilterText">
                 <p>Filtres</p>
             </div>
@@ -82,19 +76,20 @@
                 <button class="Economique"><img src="./images/Icons/nos-pepites.png" alt="Icône Nos Pépites"
                         style="width: 22px">Nos pépites</button>
             </div>
-        </section>
-        <section class="InfoBar">
+        </div>
+        <div class="InfoBar">
             <div class="Infobardiv">
                 <img src="./images/Icons/Info.png" alt="Icône Information" style="width: 24px">
                 <p class="infobartext">Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
-        </section>
+        </div>
 
         <!--Hebergements-->
 
         <main>
             <div class="hebergements-and-populaires">
-                <section class="hebergements">
+                <div class="hebergements">
+                    <div id="hebergementpage"></div>
                     <div class="hebergements-title">
                         <h2 class="section-title">Hébergement à Marseille</h2>
                     </div>
@@ -225,13 +220,13 @@
                             <p class="afficherpluss">Afficher plus</p>
                         </div>
                     </div>
-                </section>
+                </div>
 
 
                 <!--Populaires -->
 
 
-                <section class="populaires">
+                <div class="populaires">
                     <div class="populaires-title">
                         <h2 class="section-title">Les plus populaires</h2>
                         <i class="fa-solid fa-chart-line" style="color: #0065fc;" aria-hidden="true"></i>
@@ -298,7 +293,7 @@
                             </article>
                         </a>
                     </div>
-                </section>
+                </div>
             </div>
         </main>
 
@@ -306,7 +301,8 @@
         <!--Activités A Marseilles-->
 
 
-        <section class="sectionactivités">
+        <div class="sectionactivités">
+            <div id="activitepage"></div>
             <div class="sectionactivités-title">
                 <h2>Activités à Marseille</h2>
             </div>
@@ -356,7 +352,7 @@
                     </article>
                 </a>
             </div>
-        </section>
+        </div>
 
 
         <!--Bas de page-->
@@ -365,7 +361,7 @@
 
         <footer>
             <div class="footerdiv">
-                <section class="sectionfooter">
+                <div class="sectionfooter">
                     <div class="sectionfooter1">
                         <h3>À propos</h3>
                         <p>Fonctionnement du site</p>
@@ -383,7 +379,7 @@
                         <p>Centre d'aide</p>
                         <p>Nous contacter</p>
                     </div>
-                </section>
+                </div>
             </div>
         </footer>
     </div>

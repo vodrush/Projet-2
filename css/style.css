@@ -261,7 +261,7 @@ a {
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: grid;
-    grid-template-columns: 2fr 1fr; /* 2/3 and 1/3 columns */
+    grid-template-columns: 2fr 1fr; 
     gap: 20px;
     width: 100%;
 }
@@ -272,7 +272,7 @@ a {
     padding: 30px;
     box-sizing: border-box;
     display: grid;
-    grid-template-rows: auto 1fr; /* Title and cards */
+    grid-template-rows: auto 1fr; 
     gap: 20px;
 }
 
@@ -285,13 +285,13 @@ a {
 .hebergements-cards {
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 20px; /* Space between the cards */
+    gap: 20px; 
 }
 
 .hebergements-cards .card {
     display: flex;
     flex-direction: column;
-    margin-top: 0; /* Reset margin since gap is used */
+    margin-top: 0; 
 }
 
 .hebergements-cards img {
@@ -330,7 +330,7 @@ a {
     padding: 30px;
     box-sizing: border-box;
     display: grid;
-    grid-template-rows: auto 1fr; /* Title and cards */
+    grid-template-rows: auto 1fr; 
     gap: 20px;
     width: 450px;
 }
@@ -344,12 +344,12 @@ a {
 .populaires-cards {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Space between the cards */
+    gap: 20px; 
 }
 
 .populaires-cards .card {
     display: flex;
-    margin-top: 0; /* Reset margin since gap is used */
+    margin-top: 0; 
     width: 100%;
     max-width: 369px;
     height: 136px;
