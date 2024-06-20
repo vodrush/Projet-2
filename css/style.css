@@ -20,8 +20,8 @@
     width: 100%;
     z-index: 1;
     height: 100%;
-    min-width: 1360px;
-    max-width: 1360px;
+    min-width: 1310px;
+    max-width: 1310px;
     margin: 0 auto;
 }
 
@@ -32,7 +32,7 @@
     height: 19px;
     padding-top: 30px;
 }
-.boutondivhebergement{
+.navigation{
     display: flex;
     flex-direction: row;
     gap: 30px;
@@ -65,6 +65,7 @@
     align-items: center;
     justify-content: center;
     font-weight: 400;
+    padding-top: 5px;
 }
 .Infobardiv{
     font-size: 16px;
@@ -451,6 +452,7 @@ a {
 }
 
 /****** Footer ***********/
+
 .sectionfooter {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -471,29 +473,9 @@ a {
 
 /****** Media queries ***********/
 
-@media screen 
-  and (min-width: 1025px) 
-  and (max-width: 1600px)  { 
-    .Info{
-        display: flex;
-        position: relative;
-        justify-content: space-between;
-        height: 100%;
-        width: 100vw;
-        min-width: 1360px;
-        max-width: 1360px;
-     }
-     .footerdiv {
-        display: flex;
-        flex-direction: column;
-        min-width: 81em;
-    }
-}
-/* Portrait */
-@media only screen 
-  and (min-width: 768px) 
-  and (max-width: 1280px) 
-  and (orientation: portrait)  {
+      /* Tablette */
+/* Portrait and Landscape */
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
     .main-container {
         width: 100%;
         max-width: 1440px;
@@ -504,7 +486,7 @@ a {
         display: flex;
         position: relative;
         justify-content: space-between;
-        width: 30em;
+        width: 100%;
         z-index: 1;
         height: 100%;
         min-width: 94vw;
@@ -517,7 +499,6 @@ a {
         position: relative; 
         margin-left: -5px;
     }
-
     .FilterText {
         padding-top: 20px;
         font-size: 18px;
@@ -540,7 +521,7 @@ a {
         height: 207px;
         width: 25.5vw;
     }
-    .populaires-cards{
+    .populaires-cards {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 20px;
@@ -551,7 +532,7 @@ a {
         gap: 30px;
         padding-right: 2vh;
     }
-    .cardactivite img{
+    .cardactivite img {
         width: 20vw;
         height: 20vw;
     }
@@ -560,81 +541,8 @@ a {
         flex-direction: column;
         min-width: 90vw;
     }
-
 }
-
-/* Landscape */
-@media only screen 
-  and (min-width: 768px) 
-  and (max-width: 1280px) 
-  and (orientation: landscape)  {
-    .main-container {
-        width: 100%;
-        max-width: 1440px;
-        padding: 0px 20px;
-        box-sizing: border-box;
-    }
-    .Info{
-        display: flex;
-        position: relative;
-        justify-content: space-between;
-        width: 100%;
-        z-index: 1;
-        height: 100%;
-        min-width: 94vw;
-        max-width: 94vw;
-        margin: 0 auto;
-    }
-    .Filterbar {
-        display: flex;
-        align-items: flex-end;
-        position: relative; 
-        margin-left: -5px;
-    }
-
-    .FilterText {
-        padding-top: 20px;
-        font-size: 18px;
-        font-weight: 700;
-        position: absolute;
-        padding-bottom: 50px;
-        padding-left: 10px;
-    }
-    .bouton-div {
-        padding-left: 10px;
-        padding-top: 60px;
-    }
-    .hebergements-and-populaires {
-        grid-template-columns: 1fr;
-    }
-    .hebergements, .populaires {
-        width: 93vw;
-    }
-    .hebergements-cards .card{
-        height: 207px;
-        width: 25.5vw;
-    }
-    .populaires-cards{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 20px;
-    }
-    .sectionactivités-card {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 30px;
-        padding-right: 2vh;
-    }
-    .cardactivite img{
-        height: 20vw;
-        width: 20vw;
-    }
-    .footerdiv {
-        display: flex;
-        flex-direction: column;
-        min-width: 90vw;
-    }
-}
+    /* Telephone */
 /* Portrait and Landscape */
 @media only screen 
   and (min-width: 320px) 
@@ -656,16 +564,6 @@ a {
     .logo{
         justify-content: center;
     }
-    .boutondivhebergement{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        padding-left: 20px;
-        gap: 0px;
-        padding-top: 30px;
-        width: 100vw;
-    }
     .ButtonHebergement{
         display: flex;
         outline: 0;
@@ -683,6 +581,9 @@ a {
     .boutondivactivites{
         gap: 0px;
     }
+    .navigation{
+        gap: 0px;
+    }
     .Buttonactivite{
         display: flex;
         outline: 0;
@@ -695,6 +596,7 @@ a {
         align-items: center;
         justify-content: center;
         font-weight: 400;
+        padding-top: 0px;
     }
     .main-container {
         width: 100%;
@@ -925,7 +827,7 @@ a {
             background-color: #f2f2f2 ;
             padding-top: 5px;
             padding-left: 0px;
-            width: 90vw;
+            width: 97vw;
             height: 163px;
         }
         .sectionfooter2{
@@ -933,7 +835,7 @@ a {
             padding-top: 5px;
             padding-left: 0px;
             padding-right: 0px;
-            width: 90vw;
+            width: 97vw;
             height: 163px;
             margin-right: 0px;
         }
@@ -941,11 +843,9 @@ a {
             background-color: #f2f2f2 ;
             padding-top: 5px;
             padding-left: 0px;
-            width: 90vw;
+            width: 97vw;
             height: 163px;
         }
-
-
 
 }
 
