@@ -616,32 +616,33 @@ a {
         background-position: center; 
         color: transparent; 
         border: 1px solid transparent; 
-        border-radius: 15px 15px 15px 15px;
-        padding: 10px; 
+        border-radius: 15px;
+        padding: 15px 16px 15px 16px;
         cursor: pointer;
-        margin-left: 219px;
-        width: 54px; 
-        height: 54px;
+        width: 47px; 
+        height: 49px;
         font-weight: 700;
-        position: absolute;
+        margin-left: -40px;
+        overflow: hidden; /* Empêche le contenu de dépasser */
     }
     .Input-Recherche{
-        width: 244px;
-        position: absolute;
-
+        width: 83vw;
+        margin-left: -24px;
     }
+
     .Barre-de-recherche {
+        display: flex;
+        flex-direction: row;
         background-color: #fff;
         border-radius: 4px;
         padding: 8px;
         font-family: 'Raleway', sans-serif;
         min-width: auto;
-        width: 264px;
-        gap: 24px;
+        width: 92.5vw;
         margin-top: 15px;
-        position: absolute;
-        
-        
+        flex-wrap: nowrap;
+        align-content: center;
+        align-items: center;
     }
     .FilterText {
         padding-top: 20px;
@@ -652,10 +653,10 @@ a {
     .Filterbar {
         display: grid;
         grid-template-columns: auto auto;
-        padding-left: 15px;
+        padding-left: 5px;
         width: 1px;
         height: 20px;
-        padding-top: 120px;
+        padding-top: 30px;
       }
       .bouton-div {
         display: grid;
@@ -689,7 +690,7 @@ a {
     .populaires {
         margin-top: 50px;
         background-color: #F2F2F2;
-        width: 101vw;
+        width: 104vw;
         height: 520px;
         border-radius: 20px;
         padding: 0px;
@@ -766,6 +767,7 @@ a {
         padding: 0px;
         gap: 40px;
         box-sizing: border-box;
+        justify-content: center;
     }
     .hebergements-title{
         padding-left: 30px;
@@ -784,30 +786,32 @@ a {
     }
     .hebergements-cards .card {
         width: 91vw;
-        margin-left: 4.5vw;
+        margin-left: 7.5vw;
         height: 207px;
         gap: 4px;
         padding: 0px 0px 15px 0px;
     }
     .afficherplus {
         margin-top: 0px;
-        padding-left: 25px;
+        padding-left: 40px;
     }
     .cardactivite{
-        width: 87vw;
+        width: 91vw;
         height: 190px;
     }
     .cardactivite img{
         height: 124px;
-        width: 89vw;
+        width: 92vw;
     }
     .sectionactivités {
-        margin-left: 4.5vw;
+        margin-left: 0vw;
         margin-right: 0px;
         margin-top: 0px;
+        width: 100vw;
     }
     .sectionactivités-card {
         flex-direction: column;
+        align-items: center;
     }
     .sectionactivités-title{
         padding-left: 0px;
@@ -827,7 +831,7 @@ a {
             background-color: #f2f2f2 ;
             padding-top: 5px;
             padding-left: 0px;
-            width: 97vw;
+            width: 100vw;
             height: 163px;
         }
         .sectionfooter2{
