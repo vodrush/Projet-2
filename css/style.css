@@ -554,7 +554,7 @@ a {
         height: 100%;
         min-width: 20.40261153427639vh;
         max-width: 767px;
-        margin-left: -10px;
+        margin-left: 0px;
         justify-content: center;
         align-content: center;
         align-items: center;
@@ -572,7 +572,7 @@ a {
         background-color: #fff;
         cursor: pointer;
         height: 35px;
-        width: 52vw;
+        width: 50vw;
         align-items: center;
         justify-content: center;
         font-weight: 400;
@@ -592,21 +592,34 @@ a {
         background-color: #fff;
         cursor: pointer;
         height: 35px;
-        width: 52vw;
+        width: 50vw;
         align-items: center;
         justify-content: center;
         font-weight: 400;
         padding-top: 0px;
     }
     .main-container {
-        width: 100%;
-        max-width: 1440px;
-        padding: 0px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 95vw;
+        padding: 0;
         box-sizing: border-box;
+    }
+    body {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: start;
+        margin-top: 0px;
+        margin: 0;
     }
     .Titre-Recherche {
         display: flex;
         padding-top: 40px;
+        padding-left: 2vw;
+        
     }
     .Bouton-Recherche {
         background-color: #4285f4;
@@ -643,17 +656,19 @@ a {
         flex-wrap: nowrap;
         align-content: center;
         align-items: center;
+        padding-left: 5vw;
     }
     .FilterText {
         padding-top: 20px;
         font-size: 18px;
         font-weight: 700;
         position: absolute;
+        padding-left: 2vw;
     }
     .Filterbar {
         display: grid;
         grid-template-columns: auto auto;
-        padding-left: 5px;
+        padding-left: 2vw;
         width: 1px;
         height: 20px;
         padding-top: 30px;
@@ -663,7 +678,7 @@ a {
         grid-template-columns: auto;
         grid-gap: 10px;
         row-gap: 7px;
-        padding-left: 0px;
+        padding-left: 2vw;
       }
       .Economique, .Familial {
         width: 43.333vw;
@@ -684,13 +699,12 @@ a {
         flex-direction: row;
         align-items: center;
         margin-top: 140px;
-        margin-bottom: -40px;
+        padding-left: 2vw;
     }
     
     .populaires {
-        margin-top: 50px;
         background-color: #F2F2F2;
-        width: 104vw;
+        width: 100vw;
         height: 520px;
         border-radius: 20px;
         padding: 0px;
@@ -725,7 +739,7 @@ a {
     .populaires-cards .card {
         height: 121px;
         margin-left: 6.5vw;
-        width: 90vw;
+        width: 86vw;
         max-width: 90vw;
         
     }
@@ -751,7 +765,6 @@ a {
     .hebergements-and-populaires {
         display: flex;
         flex-direction: column-reverse;
-        margin-left: -20px;
         width: 100vw;
         
     }
@@ -770,7 +783,7 @@ a {
         justify-content: center;
     }
     .hebergements-title{
-        padding-left: 30px;
+        padding-left: 0px;
     }
     .hebergements-cards img {
         width: 91vw;
@@ -786,14 +799,12 @@ a {
     }
     .hebergements-cards .card {
         width: 91vw;
-        margin-left: 7.5vw;
         height: 207px;
         gap: 4px;
         padding: 0px 0px 15px 0px;
     }
     .afficherplus {
         margin-top: 0px;
-        padding-left: 40px;
     }
     .cardactivite{
         width: 91vw;
@@ -807,47 +818,51 @@ a {
         margin-left: 0vw;
         margin-right: 0px;
         margin-top: 0px;
-        width: 100vw;
+        width: 90vw;
     }
     .sectionactivités-card {
         flex-direction: column;
-        align-items: center;
+        padding-left: 5vw;
     }
     .sectionactivités-title{
-        padding-left: 0px;
+        padding-left: 2vw;
+    }
+    .footerdiv{
+        width: 90vw;
     }   
     .sectionfooter {
         display: grid;
-        grid-template-columns: auto ;
+        grid-template-columns: auto;
         margin-top: 40px;
+        padding-right: 0px;
+        padding-left: 0px;
         width: 97vw;
         height: 461px;
         text-indent: 30px;
         justify-content: start;
-
-        
-    }   
+        align-items: center;
+        justify-items: start;
+        align-content: center;
+    }  
         .sectionfooter1{
             background-color: #f2f2f2 ;
             padding-top: 5px;
-            padding-left: 0px;
+            padding-left: 0;
             width: 100vw;
             height: 163px;
         }
         .sectionfooter2{
             background-color: #f2f2f2 ;
             padding-top: 5px;
-            padding-left: 0px;
-            padding-right: 0px;
-            width: 97vw;
+            padding-left: 0;
+            width: 100vw;
             height: 163px;
-            margin-right: 0px;
         }
         .sectionfooter3{
             background-color: #f2f2f2 ;
             padding-top: 5px;
-            padding-left: 0px;
-            width: 97vw;
+            padding-left: 0;
+            width: 100vw;
             height: 163px;
         }
 
